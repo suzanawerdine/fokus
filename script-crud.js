@@ -98,7 +98,7 @@ cancelar.addEventListener("click", () => {
 })
 
 document.addEventListener("focoFinalizado", () => {
-    if (tarefaSelecinada && liTarefaSelecionada) {
+    if (tarefaSelecionada && liTarefaSelecionada) {
         liTarefaSelecionada.classList.remove("app__section-task-list-item-active")
         liTarefaSelecionada.classList.add("app__section-task-list-item-complete")
         liTarefaSelecionada.querySelector("button").setAttribute("disabled", "disabled")
