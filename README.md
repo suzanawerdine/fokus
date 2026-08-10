@@ -136,7 +136,19 @@ Quando o período de foco termina, o JavaScript cria um evento personalizado:
 
 ```javascript
 const evento = new CustomEvent("focoFinalizado");
+```
 
 Depois o evento é disparado
 
+```javascript
 document.dispatchEvent(evento);
+````
+
+O arquivo responsável pelas tarefas fica "escutando" esse evento:
+```javascript
+document.addEventListener("focoFinalizado", () => {
+    // marca a tarefa selecionada como concluída
+});
+```
+
+Dessa forma, quando o temporizador termina, a tarefa que estava selecionada é automaticamente marcada como concluída.
