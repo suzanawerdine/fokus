@@ -1,5 +1,7 @@
 # ⏱️ Fokus — Temporizador de Produtividade
 
+![Fokus](./imagens/preview.png)
+
 Projeto desenvolvido durante meus estudos de **JavaScript**, a partir do projeto Fokus disponibilizado pela **Alura**.
 
 O objetivo principal foi praticar JavaScript manipulando uma interface já construída em HTML e CSS, criando um temporizador baseado na técnica Pomodoro e adicionando funcionalidades de interação com tarefas.
