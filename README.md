@@ -154,3 +154,15 @@ document.addEventListener("focoFinalizado", () => {
 ```
 
 Dessa forma, quando o temporizador termina, a tarefa que estava selecionada é automaticamente marcada como concluída.
+
+## 🌐 Projeto online 
+
+https://suzanawerdine.github.io/fokus/
+
+## 👩‍💻 Autora
+
+Suzana Werdine
+
+Estudante de desenvolvimento web, atualmente aprofundando meus conhecimentos em JavaScript, Front-End, Git e GitHub.
+
+⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
