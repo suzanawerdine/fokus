@@ -155,6 +155,23 @@ document.addEventListener("focoFinalizado", () => {
 
 Dessa forma, quando o temporizador termina, a tarefa que estava selecionada é automaticamente marcada como concluída.
 
+## ⏱️ Precisão do temporizador
+
+Durante os testes do projeto, identifiquei um problema relacionado ao funcionamento do `setInterval()` quando a aplicação é executada em uma aba em segundo plano.
+
+Inicialmente, o temporizador diminuía 1 segundo a cada execução do `setInterval()`. Porém, navegadores podem reduzir a frequência de execução de timers em abas que não estão ativas, fazendo com que o temporizador ficasse mais lento que o tempo real.
+
+Para solucionar esse problema, a lógica do temporizador foi aprimorada para utilizar `Date.now()` como referência para calcular o tempo realmente decorrido.
+
+Além disso, foram utilizados:
+
+- `setInterval()` para atualizar o contador na interface;
+- `setTimeout()` para programar a verificação do término do período;
+- `visibilitychange` para verificar o estado do temporizador quando o usuário retorna à aba;
+- `Notification API` para permitir notificações ao finalizar o período.
+
+Dessa forma, o temporizador deixa de depender da quantidade de vezes que o `setInterval()` é executado para determinar quanto tempo passou.
+
 ## 🌐 Projeto online 
 
 https://suzanawerdine.github.io/fokus/
